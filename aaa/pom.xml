@@ -3,11 +3,4 @@
   <groupId>com.bw.1703c</groupId>
   <artifactId>aaa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-  	<dependency>
-  		<groupId>org.springframework</groupId>
-  		<artifactId>spring-struts</artifactId>
-  		<version>3.0.5.RELEASE</version>
-  	</dependency>
-  </dependencies>
 </project>
