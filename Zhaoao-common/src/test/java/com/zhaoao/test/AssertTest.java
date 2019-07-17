@@ -9,7 +9,7 @@ import org.junit.Test;
 import com.zhaoao.common.utils.AssertUtil;
 import com.zhaoao.common.utils.Common;
 
-public class AssertTest<V> {
+public class AssertTest{
 	@Test
 	public void fun1Test(){
 		try {
