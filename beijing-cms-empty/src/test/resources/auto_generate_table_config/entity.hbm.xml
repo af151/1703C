@@ -3,7 +3,7 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
     
-<hibernate-mapping package="com.bawei.cms.domain">
+<hibernate-mapping package="com.zz.cms.domain">
 	<class name="User" table="cms_user">
 		<id name="id" type="java.lang.Integer">
 			<column name="id"/>
@@ -15,7 +15,7 @@
 		<property name="birthday" column="birthday" type="date"/><!-- date|time|timestamp -->
 		<property name="gender" column="gender">
 			<type name="org.hibernate.type.EnumType">
-				<param name="enumClass">com.bawei.cms.metas.Gender</param>
+				<param name="enumClass">com.zz.cms.metas.Gender</param>
 				<param name="useNamed">false</param>
 			</type>
 		</property>

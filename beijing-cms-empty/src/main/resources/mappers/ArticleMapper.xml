@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bawei.cms.dao.ArticleMapper">
+<mapper namespace="com.zz.cms.dao.ArticleMapper">
 
-  <resultMap id="BaseResultMap" type="com.bawei.cms.domain.Article">
+  <resultMap id="BaseResultMap" type="com.zz.cms.domain.Article">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="title" property="title" jdbcType="VARCHAR"/>
     <result column="summary" property="summary" jdbcType="VARCHAR" />
@@ -78,7 +78,7 @@
     id, title, summary, picture, channel_id, category_id, user_id, hits, hot, status, deleted, created, updated, content
   </sql>
   
-  <insert id="save" parameterType="com.bawei.cms.domain.Article">
+  <insert id="save" parameterType="com.zz.cms.domain.Article">
     insert into cms_article
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="title != null">

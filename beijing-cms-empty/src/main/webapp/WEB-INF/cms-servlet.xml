@@ -22,7 +22,7 @@
             http://www.springframework.org/schema/mvc/spring-mvc.xsd
             ">
 	<!-- 第1步：扫描Controller -->
-	<context:component-scan base-package="com.bawei.cms.web"/>
+	<context:component-scan base-package="com.zz.cms.web"/>
 	
 	<!-- 第2步：打开注解驱动 -->
 	<mvc:annotation-driven/>
@@ -37,11 +37,11 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/my/**"/>
-			<bean class="com.bawei.cms.web.interceptors.FrontInterceptor"/>
+			<bean class="com.zz.cms.web.interceptors.FrontInterceptor"/>
 		</mvc:interceptor>
 		<mvc:interceptor>
 			<mvc:mapping path="/admin/**"/>
-			<bean class="com.bawei.cms.web.interceptors.AdminInterceptor"/>
+			<bean class="com.zz.cms.web.interceptors.AdminInterceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>
 	 -->
