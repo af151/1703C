@@ -38,6 +38,8 @@ public interface ArticleService {
 	public abstract List<Article> selects(Article article, Object object, Page pageinfo);
 
 	public abstract List<Article> searchblog(Article article);
+
+	
 	
 
 }

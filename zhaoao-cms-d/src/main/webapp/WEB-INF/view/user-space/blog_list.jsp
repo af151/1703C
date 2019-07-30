@@ -102,7 +102,7 @@
 				    		</c:forEach>
 				    		</tbody>
 				    	</table>
-				    	${pageList }
+				    	${pagelist }
 				  </div>
 				</div>
 			</div>
@@ -115,14 +115,15 @@
 		function removeblog(id){
 			if(confirm("您是否要删除这篇博客？")){
 				$.ajax({
-					url:'/my/blog/updateremove?id=' + id,
+					url:'/my/blog/remove?id=' + id,
 					type:'get',
 					success:function(data){
-						/* if(data.status){
-							$("#item_" + id).remove();
+						if(data){
+							alert("删除成功");
+							location.href="/my/blogs";
 						}else{
-							alert(data.message);
-						} */
+							alert("删除失败");
+						} 
 					}
 				});
 			}

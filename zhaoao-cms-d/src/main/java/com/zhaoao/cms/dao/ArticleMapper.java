@@ -61,4 +61,6 @@ public interface ArticleMapper {
 	public List<Article> searchblog(@Param("article")Article article);
 
 
+	
+
 }

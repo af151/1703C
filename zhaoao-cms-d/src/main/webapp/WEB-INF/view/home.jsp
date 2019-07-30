@@ -115,7 +115,7 @@
 					</c:when>
 					<c:otherwise>
 						  <div>
-						    <h3><a class="article_title" href="/article?id=${article.id}" style="${article.style}">${article.title }</a></h3>
+						    <h3><a class="article_title" href="/article?id${article.id}" style="${article.style}">${article.title }</a></h3>
 						    <p>${article.summary}</p>
 						    <p class="blog_item_footer">
 						    	<span class="glyphicon glyphicon-user" title="作者"></span>作者：${article.author.nickname}&nbsp;&nbsp;&nbsp;

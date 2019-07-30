@@ -60,10 +60,14 @@
 				    	<p>
 				    		<input id="title" path="title" name="title" value="${blog.title}" class="form-control" placeholder="博客标题"/>
 				    		<span class="red"></span>
+				    		<button id="bTitle" type="button" class="btn btn-default">B</button>
+				    		<button id="iTitle" type="button" class="btn btn-default">I</button>
+				    		<button id="rTitle" type="button" class="btn btn-default">R</button>
+				    		<input name="style" id="style" type="hidden">
 				    	</p>
 				    	
 				    	<p id="photo">
-				    		<button type="button" class="btn btn-info">添加图片</button> <br>
+				    		<button type="button" class="btn btn-info" onclick="addphoto()">添加图片</button> <br>
 				    		<c:if test="${pictures!=null }">
 				    			<c:forEach items="${pictures }" var="picture">
 				    				<img alt="" src="<%=request.getContextPath() %>${picture.photo}" style="max-height: 2.5rem" class="rounded img-fluid"><br>
@@ -160,7 +164,9 @@
 			});
 		});
 		
-		
+		function addphoto(){
+			$("#photo").append("<br/><input type='file' name='photo'/><input name='desc' class='form-control' placeholder='图片描述'/>");
+		}
 		
 		// 标题样式控制
 		$("#bTitle").click(function(){
